@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(to right, rgb(0, 153, 255), rgb(14, 228, 174));
+  background: #ddd;
   font-family: 'Lato', sans-serif;
   height: 100vh;
   display: flex;
@@ -18,7 +18,8 @@ button {
   font-size: 1.5rem;
   cursor: pointer;
   background: rgba(161, 200, 245, 0.7);
-  border: 2px solid #fff;
+  border: 2px solid #333;
+  outline: none;
 }
 
 button:hover {
@@ -29,23 +30,20 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(5, 100px);
-  /* border: 2px solid #fff; */
 }
 
-/* .clear { grid-column: span 1; } */
 .equal { grid-column: span 2; }
 
 .display {
   padding: 0.6rem;
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   min-height: 100px;
   max-width: 404px;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
-  border: 2px solid #fff;
+  border: 4px solid #333;
   border-bottom: none;
   word-wrap: break-word;
 }
@@ -59,7 +57,7 @@ button:hover {
   font-size: 1.5rem;
 }
 
-.prevNum { color: rgba(255, 255, 255, 0.685); }
+.prevNum { color: rgba(255, 255, 255, 0.8); }
 
 .output { 
   align-self: center;
