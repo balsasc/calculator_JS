@@ -41,7 +41,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   min-height: 100px;
-  max-width: 404px;
+  max-width: 100%;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
@@ -64,4 +64,18 @@ button:hover {
 .output { 
   align-self: center;
   font-size: 1.9rem;
+}
+
+@media (max-width: 450px) {
+  .buttons {
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(5, 75px);
+  }
+}
+
+@media (max-width: 300px) {
+  .buttons {
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(5, 60px);
+  }
 }
